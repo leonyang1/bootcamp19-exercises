@@ -3,5 +3,16 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
+  for (let key in obj) {
+    if (typeof el == 'object') {
+      return hasFalsyValue(el);
+    }
+    else {
+      if (!obj[key])
+      {
+        return true;
+      }
+    }
+  }
   return false;
 };

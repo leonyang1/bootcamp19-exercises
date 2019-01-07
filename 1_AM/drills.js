@@ -67,7 +67,9 @@ const shiftRight = (str, num) => {
   for (let i = 0; i < str.length; i++) {
     console.log(str.charCodeAt(i));
     if (str.charCodeAt(i) < 97)
+    console.log(str.charCodeAt(i));
     {
+      console.log((str.charCodeAt(i) + num) % 97);
       const shift = String.fromCharCode((str.charCodeAt(i) + num) % 97);
     }
     else {
